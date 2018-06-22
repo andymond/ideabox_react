@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "./NewIdeaForm.css"
 
 class NewIdeaForm extends Component {
   constructor(props) {
