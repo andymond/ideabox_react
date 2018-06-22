@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NewIdeaForm from './components/NewIdeaForm'
+import IdeasContainer from './components/IdeasContainer'
 
 class App extends Component {
   constructor() {
@@ -28,6 +29,7 @@ class App extends Component {
         <p className="App-intro">
           Enter an idea to remember fool!
         </p>
+        <IdeasContainer ideas={this.state.ideas} />
       </div>
     );
   }
