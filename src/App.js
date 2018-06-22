@@ -18,6 +18,11 @@ class App extends Component {
     this.setState({ ideas })
   }
 
+  removeIdea = (id) => {
+    const ideas = this.state.ideas.filter((idea) => idea.id !== id)
+    this.setState({ ideas })
+  }
+
   render() {
     return (
       <div className="App">
@@ -29,7 +34,7 @@ class App extends Component {
         <p className="App-intro">
           Enter an idea to remember fool!
         </p>
-        <IdeasContainer ideas={this.state.ideas} />
+        <IdeasContainer ideas={this.state.ideas} removeIdea={this.removeIdea}/>
       </div>
     );
   }
