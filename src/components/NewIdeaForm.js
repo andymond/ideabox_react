@@ -32,7 +32,7 @@ class NewIdeaForm extends Component {
           value={ this.state.description }
           onChange={ this.handleChange }
         />
-        <button>Submit</button>
+        <button onClick={this.handleSubmit}>Submit</button>
       </form>
     )
   }
